@@ -1,0 +1,21 @@
+<form [formGroup]='loginForm' novalidate>
+  <div>
+    <label for="username">Username:</label>
+    <input type="text" id="username" formControlName="username" />
+  </div>
+  <div>
+    <label for="password">Password:</label>
+    <input type="password" id="password" formControlName="password" />
+  </div>
+  <div>
+    <button [disabled]="!loginForm.valid" (click)="submitForm()">Login</button>
+  </div>
+  <div>
+    <a href="#">Forgot password?</a>
+  </div>
+</form>
+
+<div>
+  {{ loginForm.status }}<br>
+  {{ loginForm.value | json }}
+</div>
