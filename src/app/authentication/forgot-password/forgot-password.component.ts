@@ -20,7 +20,7 @@ export class ForgotPasswordComponent implements OnInit {
     this.createForm();
   }
 
-  public requestPassword(): void {
+  public resetPassword(): void {
     console.log('request password!');
     this.authService.requestPassword();
   }
