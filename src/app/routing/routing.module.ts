@@ -4,9 +4,11 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
 import { LoginComponent } from '../authentication/login/login.component';
+import { ForgotPasswordComponent } from '../authentication/forgot-password/forgot-password.component';
 
 const appRoutes: Routes = [
-  { path: 'login', component: LoginComponent},
+  { path: 'login', component: LoginComponent },
+  { path: 'forgot', component: ForgotPasswordComponent },
   { path: '', redirectTo: '/login', pathMatch: 'full'}
 ];
 
